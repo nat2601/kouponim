@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css" />
+<title>Login</title>
+</head>
+<body>
+
+	<h1>Login Page</h1>
+	<form action="loginservlet" METHOD="POST">
+		<div class="imgcontainer">
+			<img src="welcome.jpg" alt="welcome" class="avatar">
+		</div>
+
+		<div class="container">
+			<label><b>Username</b></label> <input style="color: blue" type="text"
+				placeholder="Enter Username" name="uname" required> <label><b>Password</b></label>
+			<input style="color: blue" type="password"
+				placeholder="Enter Password" name="pwd" required> </br> </br> <input
+				required type="radio" name="usertype" value="Administrator">
+			Administrator<br> <input required type="radio" name="usertype"
+				value="company"> Company <br> <input required
+				type="radio" name="usertype" value="customer">Customer <br>
+			<br>
+
+			<button type="submit">Login</button>
+			<input type="checkbox" checked="checked"> Remember me
+		</div>
+
+		<div class="container" style="background-color: #f1f1f1">
+			<button type="button" class="cancelbtn">Cancel</button>
+			<span class="psw">Forgot <a href="#">password?</a></span>
+		</div>
+	</form>
+
+</body>
+</html>
